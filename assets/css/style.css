@@ -1,0 +1,63 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    max-height: 100%;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.01rem;
+    color: black;
+    background-color: #fdfcfa;
+    font-feature-settings: 'kern' 1;
+    text-rendering: geometricPrecision;
+}
+
+nav {
+    font-size: 1.5rem;
+    line-height: 3.8rem;
+    text-transform: uppercase;
+}
+
+.container-item {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5px;
+}
+
+.item {
+    background-color: azure;
+}
+
+.item>img {
+    width: 300px;
+}
+
+.container-global {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+header {
+    height: 85px;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block
+}
+
+figure {
+    margin: 0;
+}
+
+nav {}

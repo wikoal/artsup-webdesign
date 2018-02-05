@@ -15,35 +15,6 @@ body {
     text-rendering: geometricPrecision;
 }
 
-nav {
-    font-size: 1.5rem;
-    line-height: 3.8rem;
-    text-transform: uppercase;
-}
-
-.container-item {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 5px;
-}
-
-.item {
-    background-color: azure;
-}
-
-.item>img {
-    width: 300px;
-}
-
-.container-global {
-    margin: 0 auto;
-    width: 1024px;
-}
-
-header {
-    height: 85px;
-}
-
 article,
 aside,
 figcaption,
@@ -60,4 +31,32 @@ figure {
     margin: 0;
 }
 
-nav {}
+nav {
+    font-size: 1.5rem;
+    line-height: 3.8rem;
+    text-transform: uppercase;
+}
+
+.container-item {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5px;
+}
+
+.item {
+    background-color: azure;
+    text-align: center;
+}
+
+.item>img {
+    width: 300px;
+}
+
+.container-global {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+header {
+    height: 85px;
+}

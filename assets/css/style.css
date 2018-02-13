@@ -2,6 +2,11 @@ html {
     font-family: sans-serif;
 }
 
+header,
+footer {
+    background-color: #0099cc;
+}
+
 body {
     height: 100%;
     max-height: 100%;
@@ -32,9 +37,18 @@ figure {
 }
 
 nav {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 3.8rem;
     text-transform: uppercase;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li ul li {
+    float: left;
 }
 
 .container-item {
@@ -49,12 +63,13 @@ nav {
 }
 
 .item:hover {
-    background-color: orange;
+    background-color: rgb(0, 255, 0);
     transition: background-color 2s ease-out;
 }
 
 .item>img {
     width: 300px;
+    border-radius: 50%;
 }
 
 .container-global {
@@ -63,7 +78,43 @@ nav {
 }
 
 header {
-    height: 85px;
+    /*  height: 85px;*/
+}
+
+.menushow {
+    display: none;
+    opacity: 0.1;
+    background-color: #0099ce;
+    position: absolute;
+    color: white;
+    padding: 5px 10px;
+    left: 0;
+    top: 71px;
+}
+
+nav ul li {
+    position: relative;
+    padding: 5px 20px;
+    background-color: #0099ce;
+    transition: background-color 1s ease-out;
+    border-bottom: 2px solid #0099ce;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 1s ease-out;
+}
+
+nav>ul>li:hover {
+    border-bottom: 2px solid white;
+    background-color: #00c7ce;
+}
+
+nav>ul>li:hover>.menushow {
+    display: block;
+    opacity: 1;
 }
 
 
